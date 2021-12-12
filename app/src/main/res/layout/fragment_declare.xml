@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".declare.DeclareFragment" >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/declareTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        app:tabIconTint="@color/crimson"
+        app:tabIndicatorColor="@color/crimson"
+        app:tabIndicatorGravity="bottom"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_health_care_svgrepo_com" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabVax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_syringe_svgrepo_com" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/txtDeclareOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/declareTabLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/crimson"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgDeclareOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDeclareOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtDeclareOptionDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDeclareOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtLastDeclaration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDeclareOptionDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnDeclare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/crimson"
+        android:layout_below="@+id/txtLastDeclaration"
+        android:layout_centerHorizontal="true"
+        android:text="@string/declare_button" />
+
+</RelativeLayout>

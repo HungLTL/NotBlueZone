@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AccountAddress">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layout20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/dud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinProfileCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6" />
+
+        <Spinner
+            android:id="@+id/spinProfileDistrict"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtProfileAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout20"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/declare_address"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtGenerateAddressQR"
+        android:layout_below="@id/txtProfileAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/generate_address_QR"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/crimson"/>
+
+    <Button
+        android:id="@+id/btnAddressSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGenerateAddressQR"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/crimson"
+        android:text="@string/account_save" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586410420085",
+    "project_id": "notbluezone",
+    "storage_bucket": "notbluezone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586410420085:android:881dff5e61d3e1e75d153c",
+        "android_client_info": {
+          "package_name": "com.example.notbluezone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586410420085-s0ajl613989egp3j89ducobchu9ojhgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGXn9zkq84IKX8Q27u0VORk3HkFmshq1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586410420085-s0ajl613989egp3j89ducobchu9ojhgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

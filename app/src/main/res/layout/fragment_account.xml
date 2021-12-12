@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".manage.ManageFragment" >
+
+    <Button
+        android:id="@+id/btnAccountProfile"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_profile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_account_box_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <Button
+        android:id="@+id/btnAccountFamily"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnAccountProfile"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_family"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_family_restroom_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <Button
+        android:id="@+id/btnAccountAccount"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnAccountFamily"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_account"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <Button
+        android:id="@+id/btnAccountToS"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnAccountAccount"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_ToS"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_rule_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <Button
+        android:id="@+id/btnAccountFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnAccountToS"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_feedback"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_bug_report_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <Button
+        android:id="@+id/btnAccountAbout"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnAccountFeedback"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_about"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_baseline_info_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black" />
+
+    <TextView
+        android:id="@+id/txtLoginIntroText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAccountAbout"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/account_login_intro"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLoginName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLoginIntroText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLoginName"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/crimson"
+        android:textSize="20sp"
+        android:text="@string/account_logout" />
+</RelativeLayout>

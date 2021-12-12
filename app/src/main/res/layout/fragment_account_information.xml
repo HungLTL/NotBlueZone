@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_grey"
+    tools:context=".account.AccountProfile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/btnEditUsernameEmail"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_username_email"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/btnEditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/btnEditUsernameEmail"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/account_password"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="0dp" />
+</RelativeLayout>

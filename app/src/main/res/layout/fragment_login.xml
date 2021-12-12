@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sqlite.LoginFragment">
+
+    <ImageView
+        android:id="@+id/imgLoginLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_virus_svgrepo_com" />
+
+    <RadioGroup
+        android:id="@+id/loginOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLoginLogo"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/rbUsernameLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:paddingStart="16dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="3dp"
+            android:text="@string/login_username"
+            android:textAlignment="center"
+            android:textColor="@color/radio_flat_text_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbEmailLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="3dp"
+            android:text="@string/login_email"
+            android:textAlignment="center"
+            android:textColor="@color/radio_flat_text_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbPhoneLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="3dp"
+            android:text="@string/login_phone"
+            android:textAlignment="center"
+            android:textColor="@color/radio_flat_text_selector"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtLoginInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginOptions"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/login_input_username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLoginInfo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/login_input_password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/txtRegisterAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLoginPassword"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_register"
+        android:textColor="@color/crimson"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRequestOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/crimson"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/login_button_otp_request"
+        android:visibility="invisible"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegisterAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/crimson"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/login_button"
+        app:cornerRadius="0dp" />
+</RelativeLayout>

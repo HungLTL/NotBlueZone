@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">NotBlueZone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_declare">Declare</string>
+    <string name="menu_manage">Manage</string>
+    <string name="menu_history">History</string>
+    <string name="menu_account">Account</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_username">Username</string>
+    <string name="login_phone">Phone</string>
+    <string name="login_password">Password</string>
+    <string name="login_input_email">Enter email…</string>
+    <string name="login_input_username">Enter username…</string>
+    <string name="login_input_phone">Enter phone number…</string>
+    <string name="login_input_password">Enter password…</string>
+    <string name="login_input_otp">Enter verification code…</string>
+    <string name="login_button">LOGIN</string>
+    <string name="login_button_otp_request">Request verification code</string>
+    <string name="login_register">Register new account</string>
+
+    <string name="declare_health">Declare health form</string>
+    <string name="declare_health_desc">Declare and record a health status form, to keep track of your condition in the last 14 days.</string>
+    <string name="declare_travel">Declare travel history</string>
+    <string name="declare_travel_desc">Declare a travel history form, which records any domestic movement you have done.</string>
+    <string name="declare_vax">Register vaccination form</string>
+    <string name="declare_vax_desc">Register a vaccination request, to better protect you and your community against the epidemic.</string>
+    <string name="declare_button">CREATE FORM</string>
+
+    <string name="declare_spinner_select">Select a family member for autofill:</string>
+    <string name="declare_name">Name</string>
+    <string name="declare_dob">Date of Birth</string>
+    <string name="declare_is_on_behalf">On behalf</string>
+    <string name="declare_card">ID/Social Sec./Passport No.</string>
+    <string name="declare_phone">Phone number</string>
+    <string name="declare_address">House number, Street name</string>
+    <string name="declare_visitaddress">Number, street name</string>
+    <string name="declare_dateofvisit">Date of visit</string>
+    <string name="declare_last_14_days">In the past 14 days, I have…</string>
+    <string name="declare_contact_with_covid_suspect">…made close contact with a suspected COVID-19 positive patient.</string>
+    <string name="declare_contact_with_national">…made close contact with a national from a country with high COVID-19 infection rates.</string>
+    <string name="declare_contact_with_symptoms">…made close contact with an individual who has symptoms of COVID-19.</string>
+    <string name="declare_last_14_days_symptoms">…any of the following symptoms:</string>
+    <string name="declare_last_14_days_address">…visited the following locations:</string>
+    <string name="declare_occupation">Occupation</string>
+    <string name="declare_vax_date">Desired vaccination date</string>
+    <string name="declare_guarantee">By submitting this form, I guarantee that any information provided above is my responsibility. I understand that any discrepancies may be used against me in a court of law.</string>
+    <string name="declare_submit_form">Submit form</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string name="symptom_chestpain">Chest pains</string>
+    <string name="symptom_cough">Cough</string>
+    <string name="symptom_diarrhea">Diarrhea</string>
+    <string name="symptom_fatigue">Tiredness</string>
+    <string name="symptom_fever">Fever</string>
+    <string name="symptom_headache">Headache</string>
+    <string name="symptom_nobreath">Shortness of Breath</string>
+    <string name="symptom_notalk">Loss of speech/mobility</string>
+    <string name="symptom_pain">Aches and Pains</string>
+    <string name="symptom_rash">Skin rash/Discolored fingers or toes</string>
+    <string name="symptom_redeye">Red/Irritated eyes</string>
+    <string name="symptom_senseloss">Loss of taste/smell</string>
+    <string name="symptom_sorethroat">Sore throat</string>
+
+    <string name="complication_info">Tick the options that best describe you. Some options may request further elaboration.</string>
+    <string name="complication_1">I have had an allergic reaction of at least level 2.</string>
+    <string name="complication_2">I have tested positive for COVID-19 in the past 6 months.</string>
+    <string name="complication_3">I have received a vaccine in the past 14 days.</string>
+    <string name="complication_4">I have immuno-deficiency disorders, terminal cancer, or a removed appendix.</string>
+    <string name="complication_5">I am using immune system suppressing medication, medication with corticoid, or undergoing chemotherapy.</string>
+    <string name="complication_6">I have an acute disease.</string>
+    <string name="complication_7">I have a progressing chronic disease.</string>
+    <string name="complication_8">I have a stable chronic disease.</string>
+    <string name="complication_9">I am pregnant or breastfeeding.</string>
+    <string name="complication_11">I have a blood disorder, and/or using anti-clotting medication.</string>
+    <string name="complication_12">I am allergic to many other allergens.</string>
+    <string name="complication_allergens">List allergens…</string>
+    <string name="complication_vax">List vaccines…</string>
+    <string name="complication_disease">List diseases…</string>
+
+    <string name="manage_greeting">How are you feeling today?</string>
+    <string name="manage_history_desc">View your travel history, and keep track of your whereabouts in the past days.</string>
+    <string name="manage_history">View history</string>
+
+    <string name="account_profile">User profile</string>
+    <string name="account_edit_info">Edit personal info</string>
+    <string name="account_address">Edit home address</string>
+    <string name="account_family">Manage family</string>
+    <string name="account_account">Account information</string>
+    <string name="account_ToS">Terms &amp; Conditions</string>
+    <string name="account_feedback">Feedback</string>
+    <string name="account_about">About</string>
+    <string name="account_login_intro">You are currently logged in as: </string>
+    <string name="account_not_login_intro">You are not logged in.</string>
+    <string name="account_logout">LOG OUT</string>
+    <string name="account_login">LOG IN</string>
+    <string name="account_username_email">Change login username/email</string>
+    <string name="account_password">Change password</string>
+    <string name="account_username">Your username</string>
+    <string name="account_current_password">Your current password</string>
+    <string name="account_new_password">Your new password</string>
+    <string name="account_password_confirm">Confirm password</string>
+    <string name="account_save">Save changes</string>
+
+    <string name="register_title">Register new account</string>
+    <string name="register">Register</string>
+
+    <string name="home_not_logged_in_declare">Log in to declare a health form.</string>
+    <string name="home_not_logged_in_vax">Log in to sign up for a vaccination.</string>
+
+    <string name="generate_address_QR">Generate QR code</string>
+</resources>

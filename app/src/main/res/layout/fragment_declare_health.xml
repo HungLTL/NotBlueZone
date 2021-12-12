@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".declare.DeclareHealth">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/declare_spinner_select"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinSelectFamilyMember"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/spinSelectFamilyMember"/>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator1">
+
+                <EditText
+                    android:id="@+id/txtDeclareName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.2"
+
+                    android:ems="10"
+                    android:hint="@string/declare_name"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/rbOnBehalf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/declare_is_on_behalf"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1">
+
+                <EditText
+                    android:id="@+id/declareDoB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:ems="10"
+                    android:hint="@string/declare_dob"
+                    android:inputType="date"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbGroupGender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/gender_male"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/gender_female"
+                        android:textSize="16sp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2">
+
+                <Spinner
+                    android:id="@+id/spinNationality"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/txtDeclareCardId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="10"
+                    android:hint="@string/declare_card"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtDeclarePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3"
+                android:ems="10"
+                android:hint="@string/declare_phone"
+                android:inputType="phone"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/txtDeclarePhone"/>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator2">
+
+                <EditText
+                    android:id="@+id/dud"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinCity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6" />
+
+                <Spinner
+                    android:id="@+id/spinDistrict"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtDeclareAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout4"
+                android:ems="10"
+                android:hint="@string/declare_address"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/txtDeclareAddress" />
+
+            <RelativeLayout
+                android:id="@+id/layout_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator3"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/declare_last_14_days"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/rbContactWithSuspect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:text="@string/declare_contact_with_covid_suspect"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbContactWithNational"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbContactWithSuspect"
+                    android:text="@string/declare_contact_with_national"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbContactWithSymptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbContactWithNational"
+                    android:text="@string/declare_contact_with_symptoms"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbContactWithSymptoms"
+                    android:text="@string/declare_last_14_days_symptoms"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3">
+
+                    <CheckBox
+                        android:id="@+id/rbChestPain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_chestpain"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbCough"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_cough"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbDiarhhea"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_diarrhea"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout5">
+
+                    <CheckBox
+                        android:id="@+id/rbFatigue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_fatigue"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbFever"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_fever"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbHeadache"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_headache"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout6">
+
+                    <CheckBox
+                        android:id="@+id/rbNoBreath"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_nobreath"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbPain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_pain"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbSenseLoss"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_senseloss"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout7">
+
+                    <CheckBox
+                        android:id="@+id/rbRedEye"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_redeye"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbSoreThroat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_sorethroat"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout8">
+
+                    <CheckBox
+                        android:id="@+id/rbNoTalk"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_notalk"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/rbRash"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/symptom_rash"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout9">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="@string/declare_last_14_days_address"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btnAddDeclareAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/crimson"
+                        android:insetLeft="0dp"
+                        android:insetTop="0dp"
+                        android:insetRight="0dp"
+                        android:insetBottom="0dp"
+                        app:icon="@drawable/ic_baseline_add_24"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout10" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/layout_health" />
+
+            <RelativeLayout
+                android:id="@+id/layout_vax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator4"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtDeclareOccupation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ems="10"
+                        android:hint="@string/declare_occupation"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/txtVaxDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ems="10"
+                        android:hint="@string/declare_vax_date"
+                        android:inputType="date"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinVaxPriority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout11" />
+
+                <LinearLayout
+                    android:id="@+id/layout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinVaxPriority">
+
+                    <Spinner
+                        android:id="@+id/spinVax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8" />
+
+                    <EditText
+                        android:id="@+id/txtDoseNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout12"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/complication_info"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:text="@string/complication_1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/txtLevel2AllergensList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbComplication1"
+                    android:ems="10"
+                    android:hint="@string/complication_allergens"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLevel2AllergensList"
+                    android:text="@string/complication_2"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication2"
+                    android:text="@string/complication_3"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/txtComplicationsVaxList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbComplication3"
+                    android:ems="10"
+                    android:hint="@string/complication_vax"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtComplicationsVaxList"
+                    android:text="@string/complication_4"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication4"
+                    android:text="@string/complication_5"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication5"
+                    android:text="@string/complication_6"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/txtAcuteDiseaseList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbComplication6"
+                    android:ems="10"
+                    android:hint="@string/complication_disease"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAcuteDiseaseList"
+                    android:text="@string/complication_7"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/txtProgressingChronicList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbComplication7"
+                    android:ems="10"
+                    android:hint="@string/complication_disease"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtProgressingChronicList"
+                    android:text="@string/complication_8"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication8"
+                    android:text="@string/complication_9"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication9"
+                    android:text="@string/complication_11"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rbComplication12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rbComplication11"
+                    android:text="@string/complication_12"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/txtOtherAllergens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbComplication12"
+                    android:ems="10"
+                    android:hint="@string/complication_allergens"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/layout_vax" />
+
+            <CheckBox
+                android:id="@+id/rbConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator5"
+                android:layout_marginTop="5dp"
+                android:text="@string/declare_guarantee"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSubmitForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbConfirm"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/crimson"
+                android:text="@string/declare_submit_form" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

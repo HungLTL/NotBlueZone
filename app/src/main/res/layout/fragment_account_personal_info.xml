@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AccountPersonalInfo">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <Spinner
+        android:id="@+id/spinProfileFamilyMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/txtProfilePersonalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinProfileFamilyMember"
+        android:layout_marginTop="15dp"
+
+        android:ems="10"
+        android:hint="@string/declare_name"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProfilePersonalName">
+
+        <EditText
+            android:id="@+id/txtProfileDoB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ems="10"
+            android:hint="@string/declare_dob"
+            android:inputType="date"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rbGroupProfileGender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbProfileMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/gender_male"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/rbProfileFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/gender_female"
+                android:textSize="16sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout18">
+
+        <Spinner
+            android:id="@+id/spinProfileNationality"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" />
+
+        <EditText
+            android:id="@+id/txtProfileCardId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.5"
+            android:ems="10"
+            android:hint="@string/declare_card"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtProfilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout19"
+        android:ems="10"
+        android:hint="@string/declare_phone"
+        android:inputType="phone"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnProfileSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtProfilePhone"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/crimson"
+        android:text="@string/account_save" />
+
+</RelativeLayout>
